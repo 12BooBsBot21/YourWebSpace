@@ -1,8 +1,8 @@
 
 
 
-export default function ButtonToTab ({ children }) {
+export default function ButtonToTab ({ children, setState }) {
     return (
-        <button>{children}</button>
+        <button onClick={setState} >{children}</button>
     )
 }
