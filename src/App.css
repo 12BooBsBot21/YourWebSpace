@@ -1,0 +1,83 @@
+/* Общие настройки */
+:root {
+  --primary-color: #646cff;
+  --primary-hover: #535bf2;
+  --bg-color: #f9f9f9;
+  --text-color: #213547;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Стили для StartPage (Центрирование) */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+/* Кнопки (ButtonToTab) */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.25s, transform 0.1s;
+  margin: 5px;
+}
+
+button:hover {
+  border-color: var(--primary-color);
+  background-color: #2a2a2a;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Стили для SecondPage (Навигация и Контент) */
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left; /* Контент обычно лучше читать по левому краю */
+}
