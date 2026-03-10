@@ -1,0 +1,42 @@
+
+.commentsSection {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed #ddd;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.commentsTitle {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.commentItem {
+    background: rgba(100, 108, 255, 0.03);
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-left: 3px solid #646cff;
+}
+
+.commentEmail {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #646cff;
+    margin-bottom: 4px;
+}
+
+.commentBody {
+    font-size: 0.9rem;
+    color: #444;
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
